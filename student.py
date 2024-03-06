@@ -15,5 +15,9 @@ class Student:
             print(f"{self.name} Failed")
 
 
-john = Student(1, "John", 80)
-john.pass_or_fail()
+student_id = int(input("Enter your Student ID number"))
+student_name = input("Enter your name")
+student_marks = int(input("Enter your marks"))
+
+student_object = Student(student_id, student_name, student_marks)
+student_object.pass_or_fail()
